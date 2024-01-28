@@ -7,7 +7,7 @@ function contactMeAPI(contactMeDb){
         
            
             // Regex for validating an email address
-        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
 
         if (!emailRegex.test(userEmail)) {
             return res.json({ status: 'error', message: 'Invalid email format' });
