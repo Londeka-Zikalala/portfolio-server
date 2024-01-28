@@ -1,0 +1,6 @@
+CREATE TABLE messages(
+    id SERIAL PRIMARY KEY AUTO INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL
+);
