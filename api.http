@@ -3,7 +3,7 @@ POST  http://localhost:3000/contact
 Content-Type: application/json
 
 {   
-"name": "test-name",
-"email": "testname.test@gmail.com",
+"name": "testname",
+"email": "testname@gmail.com",
 "message": "Hi Londeka, Please get back to me to go over a web design I think aligns with your stack"
 }
