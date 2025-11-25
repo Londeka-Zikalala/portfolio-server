@@ -1,9 +1,25 @@
-##post message
-POST  http://localhost:3000/contact
+### Post message - Contact form submission
+POST http://localhost:3000/contact
 Content-Type: application/json
 
-{   
-"name": "testname",
-"email": "testname@gmail.com",
-"message": "Hi Londeka, Please get back to me to go over a web design I think aligns with your stack"
+{
+    "name": "testname",
+    "email": "testname@gmail.com",
+    "message": "Hi Londeka, Please get back to me to go over a web design I think aligns with your stack"
 }
+
+### Test with different user
+POST http://localhost:3000/contact
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "message": "This is a test message to verify the contact form and email notifications are working correctly."
+}
+
+### Health check endpoint
+GET http://localhost:3000/health
+
+### Keep-alive ping endpoint
+GET http://localhost:3000/ping
